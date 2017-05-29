@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  builder:
+    image: golang
+    volumes:
+      - ./build.sh:/build.sh
+      - ./go:/gotip
+    working_dir: /gotip
+    command: "/build.sh"
+    restart: "no"
