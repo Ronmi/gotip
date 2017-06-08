@@ -22,6 +22,8 @@ You have to install `docker-ce` and `docker-compose` by yourself.
 $ docker-compose up
 # or add -d to run in background
 $ docker-compose up -d
+# or run once
+$ docker-compose run --rm builder
 ```
 
 # License
